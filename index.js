@@ -20,10 +20,6 @@ function addToCart(item) {
  return cart;
 }
 
-addToCart('orange');
-addToCart('pear');
-addToCart('quince');
-
 function viewCart() {
   console.log(cart);
   let cartList = [];
@@ -54,8 +50,6 @@ function viewCart() {
   console.log(`In your cart, you have${cartList}`);
   return `In your cart, you have ${cartList}`;
 }
-
-viewCart();
 
 function total() {
   let total = 0;

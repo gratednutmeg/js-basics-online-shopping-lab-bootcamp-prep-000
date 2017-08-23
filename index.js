@@ -75,7 +75,12 @@ function total() {
 total();
 
 function removeFromCart(item) {
-  cart[i].hasOwnProperty(item)
+  for (let i = 0; i < cart.length; i++){
+    if (cart[i].hasOwnProperty(item)) {
+      cart.splice(i,1);
+    }
+  }
+  
 }
 
 function placeOrder(cardNumber) {

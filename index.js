@@ -66,8 +66,6 @@ function total() {
   return total;
 }
 
-total();
-
 function removeFromCart(item) {
   let removedItem = false;
   for (let i = 0; i < cart.length; i++){
